@@ -5,6 +5,8 @@ import android.view.View;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.geektech.lifecycleactivity.R;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView tvResult;
@@ -15,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.Theme_LifeCycleActivity);
+
         setContentView(R.layout.activity_main);
         tvResult = findViewById(R.id.btn_tv_result);
 
